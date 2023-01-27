@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cifrado</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo aplicacion encriptar">
+    </header>
+    <main>
+        <section class="seccion_1">
+            <textarea type="text" class="textarea" placeholder="Escribe tu texto aquí" id="textoEncriptado"></textarea>
+            <div class="contenedor_botones">
+                <input type="button" value="Encriptar" class="boton_encriptar" id="botonEncriptado">
+                <input type="button" value="Desencriptar" class="boton_desencriptar" id="botonDesencriptado">
+                <button type="button" id="botonCopiar">Copiar</button>
+            </div>
+        </section>
+        <section class="seccion_2">
+            <div class="contenedor_imagen">
+                <img src="./munieco.png" alt="muñeco">
+            </div>
+            <textarea class="contenedor_subtitulo" name="resultado" id="textoDesencriptado" cols="10" rows="10"></textarea>
+        </section>
+    </main>
+    <footer>
+        BY GONZALO AVALOS
+    </footer>
+</body>
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+</html>
